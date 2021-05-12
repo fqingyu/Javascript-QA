@@ -68,5 +68,6 @@ setTimeout(() => console.log(i), 0)
 在使用let 声明迭代变量时，JavaScript 引擎在后台会为每个迭代循环声明一个新的迭代变量。
 每个setTimeout 引用的都是不同的变量实例
 - const: 基本与let相同。不同的地方不可用const在for循环中做迭代变量
+
 **代码风格**  
 尽量不使用var，只剩下const或者let。const > left。
