@@ -39,7 +39,7 @@ var name = 'Matt';
 console.log(age); // ReferenceError：age 没有定义
 let age = 26;
 ```
-**全局声明**
+**全局声明**  
 与var不同，let在全局作用域的声明不会变成window对象的属性，而var会。
 ```javascript
 var name = 'Matt';
@@ -47,7 +47,7 @@ console.log(window.name); // 'Matt'
 let age = 26;
 console.log(window.age); // undefined
 ```
-**条件声明**
+**条件声明**  
 不要用let使用条件声明，它是一种反模式，让代码变的难以理解，一定有更好的声明方式。
 
 **for循环中的声明**
@@ -68,5 +68,5 @@ setTimeout(() => console.log(i), 0)
 在使用let 声明迭代变量时，JavaScript 引擎在后台会为每个迭代循环声明一个新的迭代变量。
 每个setTimeout 引用的都是不同的变量实例
 - const: 基本与let相同。不同的地方不可用const在for循环中做迭代变量
-**代码风格**
+**代码风格**  
 尽量不使用var，只剩下const或者let。const > left。
