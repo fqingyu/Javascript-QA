@@ -72,6 +72,6 @@ setTimeout(() => console.log(i), 0)
 **代码风格**  
 尽量不使用var，只剩下const或者let。const > left。  
 
-####执行上下文  
-Brief Image:
+#### 执行上下文  
+Brief Image:  
 ![image](https://github.com/fqingyu/Javascript-QA/blob/main/images/ContextExcutionBrief.png)
